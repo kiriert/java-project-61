@@ -1,6 +1,7 @@
 plugins {
     id("java")
     application
+    id("checkstyle")
 }
 
 tasks.getByName("run", JavaExec::class) {
