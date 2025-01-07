@@ -13,11 +13,12 @@ public class Calc {
         System.out.println("What is the result of the expression?");
 
         int counter = 0;
+        int finalCount = 3;
+        int endRandomNum = 100;
+        for (int i = 0; i < finalCount; i++) {
 
-        for (int i = 0; i < 3; i++) {
-
-            int randomNumber1 = random.nextInt(100) + 1;
-            int randomNumber2 = random.nextInt(100) + 1;
+            int randomNumber1 = random.nextInt(endRandomNum) + 1;
+            int randomNumber2 = random.nextInt(endRandomNum) + 1;
 
             char[] operations = {'+', '-', '*'};
             char operation = operations[random.nextInt(operations.length)];
@@ -47,7 +48,7 @@ public class Calc {
                 break;
             }
         }
-        if (counter == 3) {
+        if (counter == finalCount) {
             Engine.userWin();
         }
 

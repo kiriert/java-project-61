@@ -13,14 +13,22 @@ public class Progression {
 
         System.out.println("What number is missing in the progression?");
         int counter = 0;
-        for (int i = 0; i < 3; i++) {
+        int finalCount = 3;
+        int endRandomFirstNum = 100;
+        int minLength = 5;
+        int maxLength = 10;
+        int minDifference = 1;
+        int maxDifference = 10;
+        int mitRandomVoid = 1;
+
+        for (int i = 0; i < finalCount; i++) {
 
 
 
-            int randomFirstNum = random.nextInt(100) + 1;
-            int randomLength = random.nextInt(5, 10);
-            int randomDifference = random.nextInt(1, 10);
-            int randomVoid = random.nextInt(1, randomLength);
+            int randomFirstNum = random.nextInt(endRandomFirstNum) + 1;
+            int randomLength = random.nextInt(minLength, maxLength);
+            int randomDifference = random.nextInt(minDifference, maxDifference);
+            int randomVoid = random.nextInt(mitRandomVoid, randomLength);
 
             System.out.print("Question: ");
             int trueAnswer = 0;
@@ -45,7 +53,7 @@ public class Progression {
                 break;
             }
         }
-        if (counter == 3) {
+        if (counter == finalCount) {
             Engine.userWin();
         }
     }

@@ -15,9 +15,12 @@ public class Prime {
 
         String trueAnswer = "yes";
         int counter = 0;
-        for (int i = 0; i < 3; i++) {
+        int finalCount = 3;
+        int endRandomNum = 100;
 
-            int randomNum = random.nextInt(100) + 1;
+        for (int i = 0; i < finalCount; i++) {
+
+            int randomNum = random.nextInt(endRandomNum) + 1;
             if (randomNum < 2) {
                 trueAnswer = "no";
             }
@@ -41,7 +44,7 @@ public class Prime {
             }
 
         }
-        if (counter == 3) {
+        if (counter == finalCount) {
             Engine.userWin();
         }
     }

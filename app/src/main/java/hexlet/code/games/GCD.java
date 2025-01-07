@@ -14,9 +14,12 @@ public class GCD {
         System.out.println("Find the greatest common divisor of given numbers.");
 
         int counter = 0;
-        for (int i = 0; i < 3; i++) {
-            int randomNum1 = random.nextInt(100) + 1;
-            int randomNum2 = random.nextInt(100) + 1;
+        int finalCount = 3;
+        int endRandomNum = 100;
+
+        for (int i = 0; i < finalCount; i++) {
+            int randomNum1 = random.nextInt(endRandomNum) + 1;
+            int randomNum2 = random.nextInt(endRandomNum) + 1;
 
             System.out.println("Question: " + randomNum1 + " " + randomNum2);
             System.out.print("Your answer: ");
@@ -38,7 +41,7 @@ public class GCD {
             }
 
         }
-        if (counter == 3) {
+        if (counter == finalCount) {
             Engine.userWin();
         }
     }

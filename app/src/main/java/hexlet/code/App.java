@@ -18,20 +18,26 @@ class App {
         System.out.println("1 - Greet\n" + "2 - Even\n" + "3 - Calc\n"
                 + "4 - GCD\n" + "5 - Progression\n" + "6 - Prime\n" + "0 - Exit");
         System.out.print("Your choice: ");
-        int gameNumber = scanner.nextInt();
+        int userSelection = scanner.nextInt();
+        int gameCli = 1;
+        int gameEven = 2;
+        int gameCalc = 3;
+        int gameGCD = 4;
+        int gameProgression = 5;
+        int gamePrime = 6;
 
 
-        if (gameNumber == 1) {
+        if (userSelection == gameCli) {
             Cli.scanner();
-        } else if (gameNumber == 2) {
+        } else if (userSelection == gameEven) {
             Even.game2();
-        } else if (gameNumber == 3) {
+        } else if (userSelection == gameCalc) {
             Calc.game3();
-        } else if (gameNumber == 4) {
+        } else if (userSelection == gameGCD) {
             GCD.game4();
-        } else if (gameNumber == 5) {
+        } else if (userSelection == gameProgression) {
             Progression.game5();
-        } else if (gameNumber == 6) {
+        } else if (userSelection == gamePrime) {
             Prime.game6();
         } else {
             System.out.println("Bye!Bye!");

@@ -10,12 +10,16 @@ public class Even {
 
         Engine.greetingUser();
 
+
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
 
 
         int counter = 0;
-        for (int i = 0; i < 3; i++) {
-            int randomNumber = random.nextInt(100) + 1;
+        int finalCount = 3;
+        int endRandomNum = 100;
+
+        for (int i = 0; i < finalCount; i++) {
+            int randomNumber = random.nextInt(endRandomNum) + 1;
             System.out.println("Question: " + randomNumber);
             System.out.print("Your answer: ");
             String response = scanner.nextLine();
@@ -33,7 +37,7 @@ public class Even {
                 break;
             }
         }
-        if (counter == 3) {
+        if (counter == finalCount) {
             Engine.userWin();
         }
 
