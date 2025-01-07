@@ -36,7 +36,7 @@ public class Calc {
                 default:
                     break;
             }
-            System.out.println("Question: " + randomNumber1 + operation + randomNumber2);
+            System.out.println("Question: " + randomNumber1 + " " + operation + " " + randomNumber2);
             System.out.print("Your answer: ");
             int userAnswer = scanner.nextInt();
             if (userAnswer == trueAnswer) {
