@@ -19,3 +19,13 @@ Game GCD:
 
 1. Win game: https://asciinema.org/a/Y8nFjv7oZAicTNbzBcu6v9hWe
 2. Lose game: https://asciinema.org/a/JbcSOI2y83F7FCTmgitvqNBbu
+
+Game Progression:
+
+1. Win game: https://asciinema.org/a/pNAKP8IsuLx6IR6V8pGH6nL9Z
+2. Lose game: https://asciinema.org/a/DrRxR1B4C2en3uSoCThpCffRu
+
+Game Prime:
+
+1. Win game: https://asciinema.org/a/n2vmJq0dWtGtWaizXoEJMbJP6
+2. Lose game: https://asciinema.org/a/U1aXI2UyBNi3MSHTWYz9Ypwuf
