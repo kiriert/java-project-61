@@ -6,15 +6,16 @@ import hexlet.code.Engine;
 public class Even {
     public static void game2() {
         Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
 
         Engine.greetingUser();
 
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
 
-        Random random = new Random();
+
         int counter = 0;
         for (int i = 0; i < 3; i++) {
-            int randomNumber = random.nextInt(100);
+            int randomNumber = random.nextInt(100) + 1;
             System.out.println("Question: " + randomNumber);
             System.out.print("Your answer: ");
             String response = scanner.nextLine();

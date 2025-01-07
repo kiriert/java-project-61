@@ -16,8 +16,8 @@ public class Calc {
 
         for (int i = 0; i < 3; i++) {
 
-            int randomNumber1 = random.nextInt(100);
-            int randomNumber2 = random.nextInt(100);
+            int randomNumber1 = random.nextInt(100) + 1;
+            int randomNumber2 = random.nextInt(100) + 1;
 
             char[] operations = {'+', '-', '*'};
             char operation = operations[random.nextInt(operations.length)];
